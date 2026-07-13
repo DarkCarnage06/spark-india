@@ -15,6 +15,8 @@ import { PartnersSection } from "@/components/sections/partners";
 import { TestimonialsSection } from "@/components/sections/testimonials";
 import { ContactSection } from "@/components/sections/contact";
 import { Footer } from "@/components/layout/footer";
+import { AwardsSection } from "@/components/sections/awards";
+import { AdvisoryBoardSection } from "@/components/sections/advisory-board";
 
 export default function Home() {
   return (
@@ -23,13 +25,15 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <StatisticsSection />
+      <AwardsSection />
+      <WhySparkSection />
       <ProgramOverview />
       <CurriculumSection />
       <ExperientialLearning />
       <InnovationLabs />
       <MentorshipSection />
+      <AdvisoryBoardSection />
       <CsrImpactSection />
-      <WhySparkSection />
       <RoadmapSection />
       <GallerySection />
       <PartnersSection />

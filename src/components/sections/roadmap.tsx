@@ -3,66 +3,75 @@
 import { motion } from "framer-motion";
 
 const MILESTONES = [
-  { phase: "Phase 1", title: "Launch", desc: "Program inauguration and school onboarding." },
-  { phase: "Phase 2", title: "Training", desc: "Educator training and mentor allocation." },
-  { phase: "Phase 3", title: "Satellite Building", desc: "CanSat assembly and payload programming." },
-  { phase: "Phase 4", title: "Rocketry", desc: "Model rocket design and aerodynamics testing." },
-  { phase: "Phase 5", title: "Innovation Projects", desc: "Students work on independent STEM projects." },
-  { phase: "Phase 6", title: "Final Showcase", desc: "National exhibition and joint certification." },
+  { year: "2014", title: "Inception of ISET", desc: "Focus on grassroots science popularization." },
+  { year: "2016", title: "Aryabhata Educational Satellite Programme", desc: "Launched to inspire students through hands-on satellite building." },
+  { year: "2018", title: "MoU with ISRO-SPPU STC", desc: "Formal MoU signed for Space Technology Cell collaboration." },
+  { year: "2019", title: "National Water Rocket Championship", desc: "Introduced the first national-level championship." },
+  { year: "2020", title: "Virtual STEM Education", desc: "Transitioned during pandemic, reaching 5 Lakh+ students." },
+  { year: "2022", title: "100-School STEM Innovation Lab", desc: "Launched initiative to establish high-tech innovation labs." },
+  { year: "2023", title: "WeMoSat CanSat Training", desc: "Executed the CanSat training programme for high school students." },
+  { year: "2024", title: "20 Lakh+ Students Impacted", desc: "Crosses the major milestone of empowering students across India." },
 ];
 
 export function RoadmapSection() {
   return (
-    <section className="py-24 relative z-10 overflow-hidden">
-      <div className="container mx-auto px-4 max-w-6xl">
-        <div className="text-center mb-16">
+    <section className="py-24 relative z-10 overflow-hidden ">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-900/10 via-transparent to-transparent" />
+      
+      <div className="container mx-auto px-4 max-w-6xl relative z-10">
+        <div className="text-center mb-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-sm text-primary font-bold tracking-widest uppercase mb-2">The Journey</h2>
+            <h2 className="text-sm text-blue-400 font-bold tracking-widest uppercase mb-2">Our Journey</h2>
             <h3 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              10-Month Roadmap
+              Timeline of Key Milestones
             </h3>
+            <p className="text-lg text-zinc-400 font-light max-w-3xl mx-auto">
+              A decade of empowering young minds, popularizing science, and creating future-ready innovators.
+            </p>
           </motion.div>
         </div>
 
-        <div className="relative flex flex-col md:flex-row justify-between items-start md:items-center mt-12 gap-8 md:gap-0">
-          {/* Connecting Line */}
-          <div className="absolute left-[27px] md:left-0 md:top-1/2 md:-translate-y-1/2 w-1 md:w-full h-full md:h-1 bg-white/10 rounded-full" />
-          <motion.div 
-            initial={{ height: 0, width: 0 }}
-            whileInView={{ height: "100%", width: "100%" }}
-            viewport={{ once: true }}
-            transition={{ duration: 1.5, ease: "easeInOut" }}
-            className="absolute left-[27px] md:left-0 md:top-1/2 md:-translate-y-1/2 w-1 md:w-full h-full md:h-1 bg-gradient-to-b md:bg-gradient-to-r from-primary via-accent to-primary rounded-full hidden md:block origin-left"
-          />
+        <div className="relative">
+          {/* Vertical Line for Mobile */}
+          <div className="md:hidden absolute left-8 top-0 bottom-0 w-0.5 bg-zinc-800" />
 
-          {MILESTONES.map((milestone, index) => (
-            <motion.div
-              key={milestone.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="relative z-10 flex md:flex-col items-center gap-6 md:gap-4 group w-full md:w-1/6"
-            >
-              {/* Dot */}
-              <div className="w-14 h-14 rounded-full bg-background border-2 border-white/20 flex items-center justify-center shrink-0 group-hover:border-primary group-hover:bg-primary/20 transition-all shadow-xl">
-                <div className="w-4 h-4 rounded-full bg-white/50 group-hover:bg-primary group-hover:scale-150 transition-all duration-300" />
-              </div>
-              
-              {/* Content */}
-              <div className="text-left md:text-center w-full">
-                <div className="text-primary font-mono text-xs mb-1 uppercase">{milestone.phase}</div>
-                <h4 className="text-lg font-bold text-white mb-1 group-hover:text-accent transition-colors">{milestone.title}</h4>
-                <p className="text-white/60 text-xs leading-relaxed hidden md:block">{milestone.desc}</p>
-                <p className="text-white/60 text-sm leading-relaxed md:hidden">{milestone.desc}</p>
-              </div>
-            </motion.div>
-          ))}
+          <div className="space-y-12 md:space-y-0 md:grid md:grid-cols-4 md:gap-y-16 md:gap-x-8">
+            {MILESTONES.map((milestone, index) => (
+              <motion.div
+                key={milestone.year}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="relative z-10 flex md:flex-col items-start md:items-center gap-6 md:gap-4 group"
+              >
+                {/* Dot */}
+                <div className="w-16 h-16 rounded-full bg-zinc-900 border-2 border-zinc-700 flex flex-col items-center justify-center shrink-0 group-hover:border-blue-500 group-hover:bg-blue-900/20 transition-all shadow-xl relative z-10">
+                  <span className="text-blue-400 font-bold text-sm">{milestone.year}</span>
+                </div>
+                
+                {/* Connecting Line (Desktop) */}
+                {index < MILESTONES.length - 1 && (index + 1) % 4 !== 0 && (
+                   <div className="hidden md:block absolute top-8 left-[calc(50%+2rem)] w-[calc(100%-4rem)] h-0.5 bg-zinc-800" />
+                )}
+                {/* Wrap Around Line (Desktop) */}
+                {index < MILESTONES.length - 1 && (index + 1) % 4 === 0 && (
+                   <div className="hidden md:block absolute top-8 left-[50%] w-0.5 h-[calc(100%+4rem)] bg-zinc-800" />
+                )}
+
+                {/* Content */}
+                <div className="text-left md:text-center pt-2 md:pt-0">
+                  <h4 className="text-lg font-bold text-white mb-2 group-hover:text-blue-300 transition-colors">{milestone.title}</h4>
+                  <p className="text-zinc-400 text-sm leading-relaxed">{milestone.desc}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

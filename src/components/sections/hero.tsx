@@ -8,7 +8,7 @@ export function HeroSection() {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
       {/* Background gradients for extra depth */}
-      <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-transparent to-background z-0" />
+      <div className="absolute inset-0 bg-gradient-to-b from-blue-900/10 via-transparent to-background z-0" />
       
       <div className="container relative z-10 mx-auto px-4 text-center">
         <motion.div
@@ -21,26 +21,33 @@ export function HeroSection() {
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 1, delay: 0.5, type: "spring" }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm text-sm font-medium text-primary mb-4"
+            className="inline-flex flex-col sm:flex-row items-center gap-3 mb-6"
           >
-            <Rocket className="w-4 h-4" />
-            <span>National STEM Mission</span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-sm font-medium text-blue-400 backdrop-blur-sm">
+              <Rocket className="w-4 h-4" />
+              <span>Official ISRO Space Tutor & Merchandise Partner</span>
+            </div>
           </motion.div>
 
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-100 to-white/70">
-            SPARK INDIA <br /> PROGRAM
-          </h1>
-          
-          <p className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto font-light">
-            Empowering Future Scientists Through Space Education
+          <p className="text-sm md:text-base text-blue-400 font-bold tracking-widest uppercase mb-2">
+            India&apos;s Flagship School Space Education Initiative
           </p>
 
-          <div className="flex flex-col items-center gap-2 mt-4 text-sm text-white/60 uppercase tracking-widest">
-            <span>A Joint Initiative by</span>
-            <span className="text-white/90 font-medium">Indo Science Education Trust (ISET)</span>
-            <span>and</span>
-            <span className="text-[var(--color-isro)] font-semibold">ISRO–SPPU Space Technology Cell (STC)</span>
-          </div>
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-100 to-white/70 leading-tight">
+            SPARK INDIA PROGRAM
+          </h1>
+          
+          <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto font-light mt-4 uppercase tracking-widest text-blue-300">
+            Space • Passion • Awareness • Research • Knowledge
+          </p>
+
+          <p className="text-base text-zinc-400 max-w-3xl mx-auto mt-4 leading-relaxed">
+            SPARK INDIA is a structured educational ecosystem that introduces students from Grades 1 to 10 to the fascinating world of Space Science, STEM, Robotics, Artificial Intelligence, Satellite Technology, Astronomy, Electronics, Engineering, and Emerging Technologies through experiential learning.
+          </p>
+
+          <p className="text-sm text-zinc-500 max-w-2xl mx-auto mt-2 italic">
+            A Joint Initiative of Indo Science Education Trust (ISET) In Association with - ISRO–SPPU Space Technology Cell (STC), Savitribai Phule Pune University, Pune.
+          </p>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -48,16 +55,22 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.8 }}
             className="flex flex-wrap items-center justify-center gap-4 mt-8"
           >
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white rounded-full px-8 h-12 text-base group">
-              Explore Program
-              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button size="lg" variant="outline" className="rounded-full px-8 h-12 text-base border-white/20 bg-white/5 hover:bg-white/10 backdrop-blur-sm">
-              Become an Intern
-            </Button>
-            <Button size="lg" variant="ghost" className="rounded-full px-8 h-12 text-base hover:bg-white/5">
-              View Gallery
-            </Button>
+            <a href="#program" onClick={(e) => { e.preventDefault(); document.getElementById('program')?.scrollIntoView({ behavior: 'smooth' }); }}>
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-8 h-12 text-base group">
+                Explore Program
+                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </a>
+            <a href="#contact" onClick={(e) => { e.preventDefault(); document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }); }}>
+              <Button size="lg" variant="outline" className="rounded-full px-8 h-12 text-base border-zinc-800 bg-zinc-900/50 hover:bg-zinc-800/80 text-white backdrop-blur-sm">
+                Become an Intern
+              </Button>
+            </a>
+            <a href="#gallery" onClick={(e) => { e.preventDefault(); document.getElementById('gallery')?.scrollIntoView({ behavior: 'smooth' }); }}>
+              <Button size="lg" variant="ghost" className="rounded-full px-8 h-12 text-base hover:bg-white/5 text-zinc-300 hover:text-white">
+                View Gallery
+              </Button>
+            </a>
           </motion.div>
         </motion.div>
       </div>
@@ -75,7 +88,7 @@ export function HeroSection() {
         }}
         className="absolute right-10 top-1/4 opacity-30 md:opacity-50 blur-sm md:blur-none hidden md:block"
       >
-        <div className="w-32 h-32 rounded-full bg-gradient-to-tr from-primary to-accent opacity-20" />
+        <div className="w-32 h-32 rounded-full bg-gradient-to-tr from-blue-500 to-indigo-500 opacity-20" />
       </motion.div>
 
       {/* Scroll indicator */}

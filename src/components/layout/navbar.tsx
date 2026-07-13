@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Rocket } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -42,7 +41,7 @@ export function Navbar() {
       )}
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 group">
+        <a href="#home" className="flex items-center gap-2 group">
           <div className="bg-primary/20 p-2 rounded-lg group-hover:bg-primary/40 transition-colors">
             <Rocket className="w-6 h-6 text-primary" />
           </div>
@@ -50,19 +49,19 @@ export function Navbar() {
             <span className="text-white">SPARK</span>{" "}
             <span className="text-primary">INDIA</span>
           </div>
-        </Link>
+        </a>
 
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center gap-1">
           {NAV_LINKS.map((link) => (
-            <Link
+            <a
               key={link.name}
               href={link.href}
               className="relative px-3 py-2 text-sm font-medium text-white/70 hover:text-white transition-colors group"
             >
               {link.name}
               <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-primary origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out" />
-            </Link>
+            </a>
           ))}
         </nav>
 
@@ -86,14 +85,14 @@ export function Navbar() {
           >
             <nav className="container mx-auto px-4 py-4 flex flex-col gap-4">
               {NAV_LINKS.map((link) => (
-                <Link
+                <a
                   key={link.name}
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
                   className="text-lg font-medium text-white/70 hover:text-primary transition-colors"
                 >
                   {link.name}
-                </Link>
+                </a>
               ))}
             </nav>
           </motion.div>

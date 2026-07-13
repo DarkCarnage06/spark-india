@@ -6,12 +6,18 @@ import { X, ZoomIn } from "lucide-react";
 import Image from "next/image";
 
 const IMAGES = [
-  { id: 1, src: "/images/img1.png", title: "Spark India Program Inauguration", colSpan: "md:col-span-2 md:row-span-2" },
-  { id: 2, src: "/images/img2.png", title: "Satellite Demonstration", colSpan: "md:col-span-1 md:row-span-1" },
-  { id: 3, src: "/images/img1.png", title: "Students Project Presentation", colSpan: "md:col-span-1 md:row-span-1" },
-  { id: 4, src: "/images/img2.png", title: "Rocket Motor Testing", colSpan: "md:col-span-2 md:row-span-1" },
-  { id: 5, src: "/images/img1.png", title: "Water Rocket Activity", colSpan: "md:col-span-1 md:row-span-2" },
-  { id: 6, src: "/images/img2.png", title: "Rocket with Payload Before Launch", colSpan: "md:col-span-1 md:row-span-1" },
+  { id: 1,  src: "/images/SPARK India Inauguration.jpg",        title: "SPARK India Inauguration",             colSpan: "md:col-span-2 md:row-span-2" },
+  { id: 2,  src: "/images/SPARK India Inauguration (2).jpg",    title: "SPARK India Inauguration",             colSpan: "md:col-span-1 md:row-span-1" },
+  { id: 3,  src: "/images/Scientist Interactive Sessions.jpg",  title: "Scientist Interactive Sessions",       colSpan: "md:col-span-1 md:row-span-1" },
+  { id: 4,  src: "/images/IISF Challenge.jpg",                  title: "IISF Challenge",                       colSpan: "md:col-span-1 md:row-span-1" },
+  { id: 5,  src: "/images/IISF Challenge (2).jpg",              title: "IISF Challenge",                       colSpan: "md:col-span-1 md:row-span-1" },
+  { id: 6,  src: "/images/IISF Challenge-Faridabad.jpg",        title: "IISF Challenge – Faridabad",           colSpan: "md:col-span-2 md:row-span-1" },
+  { id: 7,  src: "/images/IISF.jpg",                            title: "IISF",                                 colSpan: "md:col-span-1 md:row-span-1" },
+  { id: 8,  src: "/images/Space Exhibition.jpg",                title: "Space Exhibition",                     colSpan: "md:col-span-1 md:row-span-1" },
+  { id: 9,  src: "/images/Soharab Godrej Science & Tech Award.jpg", title: "Soharab Godrej Science & Tech Award", colSpan: "md:col-span-1 md:row-span-1" },
+  { id: 10, src: "/images/ISRO Space Tutor Certificate.jpg",    title: "ISRO Space Tutor Certificate",         colSpan: "md:col-span-1 md:row-span-1" },
+  { id: 11, src: "/images/Certificate.jpg",                     title: "Certificate",                          colSpan: "md:col-span-1 md:row-span-1" },
+  { id: 12, src: "/images/Picture9.jpg",                        title: "SPARK India Activity",                 colSpan: "md:col-span-1 md:row-span-1" },
 ];
 
 export function GallerySection() {
@@ -51,9 +57,13 @@ export function GallerySection() {
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                <ZoomIn className="w-8 h-8 text-white mb-2" />
-                <h4 className="text-white font-semibold text-lg">{img.title}</h4>
+              {/* Always-visible caption bar at bottom */}
+              <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/75 to-transparent pt-8 pb-3 px-4 flex flex-col justify-end">
+                <h4 className="text-white font-semibold text-sm leading-tight drop-shadow">{img.title}</h4>
+              </div>
+              {/* Zoom overlay on hover */}
+              <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <ZoomIn className="w-10 h-10 text-white drop-shadow-lg" />
               </div>
             </motion.div>
           ))}

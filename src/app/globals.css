@@ -78,10 +78,14 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
   * {
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground antialiased selection:bg-primary/30 selection:text-white;
+    @apply text-foreground antialiased selection:bg-primary/30 selection:text-white;
+    background: transparent;
   }
 }
