@@ -7,7 +7,7 @@ export function Footer() {
     <footer className="relative z-10 border-t border-white/10 bg-background/80 backdrop-blur-lg pt-16 pb-8">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-          
+
           <div className="md:col-span-1 space-y-4">
             <Link href="/" className="flex items-center gap-2 group mb-6">
               <div className="bg-primary/20 p-2 rounded-lg">
@@ -52,16 +52,16 @@ export function Footer() {
           <div>
             <h4 className="font-bold text-white mb-4">Connect</h4>
             <div className="flex gap-4">
-              <Link href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors text-white/60">
+              <Link href="https://m.facebook.com/indoscience/" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors text-white/60">
                 <FaFacebook className="w-5 h-5" />
               </Link>
               <Link href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors text-white/60">
                 <FaTwitter className="w-5 h-5" />
               </Link>
-              <Link href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors text-white/60">
+              <Link href="https://www.instagram.com/_indosciedu_?igsh=NTc4MTIwNjQ2YQ==" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors text-white/60">
                 <FaInstagram className="w-5 h-5" />
               </Link>
-              <Link href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors text-white/60">
+              <Link href="https://www.linkedin.com/company/indo-science-education-trust-pune?originalSubdomain=in" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors text-white/60">
                 <FaLinkedin className="w-5 h-5" />
               </Link>
             </div>
