@@ -1,0 +1,263 @@
+MANIPAL UNIVERSITY JAIPUR
+
+Directorate of Research
+
+                    Invention Disclosure Form – Confidential
+
+Form-B
+
+Please Note: Kindly Fill this “form -B and Send the soft copy to manish.rawat@jaipur.manipal.edu 
+
+DoR Reference Number:
+
+Date of Submission:
+
+MUJ Filing Categories-A, B, C 
+
+In Case Category-C selected, Provide Filing Country Name 
+
+Stage of Project: (Select one)
+
+Ideation
+
+Ongoing work
+
+Prototype
+
+Working model
+
+Results Validated
+
+Submitted by Faculty: (Corresponding Inventor)
+
+Name, Designation
+
+Department and School
+
+Name of all Inventors
+
+Name, Designation
+
+Department and School
+
+A Patent Application must meet the following criteria in order to apply for patent:
+
+New: The work must be new and have not been disclosed earlier, anywhere, in any form.
+
+Useful: The work should generally be useful to company/industry/society and not merely for additional research/promotion.
+
+  
+
+         Secure Emergency-Centric Digital Medical Record Access Platform
+
+ Abstract 
+
+The current invention relates to a secure online platform aimed at facilitating medical practitioners' ability to easily obtain essential information concerning patients' conditions when working in emergency situations. In certain cases, an individual may not be able to provide relevant information concerning his/her medical history as he/she may be either unconscious or in critical condition.
+
+The platform works with two primary user interfaces namely those aimed at individuals and authenticated hospitals respectively. Patients will be able to keep information concerning their illnesses, surgeries, medication history, allergies and other information and modify it if needed. Upon receiving verification from patients, hospitals will be able to get this information on the basis of identification.
+
+Besides, the platform includes the symptom checker which is supposed to diagnose potential illnesses suffered by patients using the capabilities of artificial intelligence. Nevertheless, it should be kept in mind that this feature merely serves informational purposes and all diagnoses and recommendations are supposed to be provided only by doctors.
+
+The proposed platform seeks to reduce mistakes made by healthcare specialists, improve decision-making speed and ensure safety of patients' information.
+
+What problems does the invention address and how your Invention is able to overcome the limitations/ problems of the existing technologies? 
+
+Problems:
+
+●Delay in collecting patient’s health records in emergency situations
+
+●Risk of administering incorrect medicines due to unknown allergic reactions and diseases
+
+●Lack of lifetime health records for patients
+
+●Use of paper-based manual records or incomplete electronic medical records
+
+Solutions:
+
+●Fast identification and access to patient’s records based on their identification
+
+●Access to hospitals only
+
+●Frequent updating of medical records
+
+●Detection of symptoms using artificial intelligence
+
+Detailed Explanation of the Invention along with working examples:
+
+●4.The current invention relates to a digital medical record that focuses on offering emergency healthcare service. The current invention seeks to solve the problem of absence of medical record during emergency cases using digital record that is accessible by the authorized user at any point in time. This invention is built taking into consideration both speed and privacy as being critical factors.
+
+Let us suppose that a patient comes to the hospital during an emergency situation caused by an accident. At this point, the patient may be unable to give any information about his health conditions. But here, the doctor signs onto the system using his credentials and then uses the patient's unique identity number to retrieve his medical records. It does not take long before the patient's medical record such as allergies, current illness, medication among others become available for the doctor to use without putting his life at risk.
+
+System Structure
+
+The invention involves two basic access modules:
+
+●Patient Access Module
+
+●Hospital/Doctor Access Module
+
+These two modules run on very high security measures and protocols.
+
+Patient Access Module
+
+In the case of the patient access module, patients can have the ability to build their own electronic medical records. Additionally, patients would have the capability of keeping their health records secure and up to date.
+
+Main functionalities include:
+
+●Authentication and verification
+
+●Medical record keeping, including:
+
+Medical illnesses (Diabetes, thyroid disease etc.)
+
+○Previous hospital visits and surgeries
+
+○Currently taking drugs
+
+○Whether one has any allergies
+
+○Lab test results
+
+●Access full medical history
+
+●Artificial Intelligence based Symptom Advisor analyzes the following for patients:
+
+○Submitted symptomsSuggests levels of severity: minor and serious symptoms
+
+○The system clearly specifies that output data is purely advisory and not any kind of medical diagnosis
+
+Hospital / Doctor Access Module
+
+This module can be used only by hospitals after verifying and credentialing them. This module should be used in case there is an emergency situation or if the patients have critical illness. Some of the features of this module are:
+
+●Credentialized access from hospitals
+
+●Urgent access to patient medical files using unique ID from government authority
+
+●Quick overview of medical history including
+
+○Permanent life-threatening illnesses
+
+○Allergies
+
+○Medications taken by patients
+
+○Surgery done
+
+This way, doctors can get an idea about the patient’s medical past without any need of verbal communications.
+
+Automatic Medical Record Update Mechanism
+
+There exists the mechanism to ensure consistency and automation of updates to patient medical records following authorized medical activity.
+
+These include:
+
+●Taking notes on the diagnosis
+
+●Taking notes on the drugs prescribed
+
+●Taking notes on the treatment administered
+
+●Date stamping and time stamping of the update performed
+
+This will prove useful in ensuring the chronology for each individual patient’s medical record is maintained throughout their lifetime.Safeguards for Security and Privacy Protection
+
+Some of the different security methods utilized to ensure that the health care information is protected include:
+
+●Roles-based access control
+
+●Cryptography methods for storage and transmission of the information
+
+●Limited emergency access which is timed and purpose bound
+
+●Access and update audit trail
+
+Please explain what is novel about the invention? And Whether the innovation is obvious to persons skilled in the field (Obviousness).
+
+The revolutionary element in this invention is the amalgamation of all these processes on one platform. Even though there have been databases that store digital patient records and symptom checkers available in the market for quite some time, their use has been independent, not necessarily geared towards emergencies. It would not strike someone in the industry to combine these especially for emergencies.
+
+What is the commercial viability of the innovation or is it capable of industrial production? (Industrial applicability)
+
+In all likelihood, it will not be easy for any person with average knowledge of technology in both medicine and computers to arrive at the invention using the prior knowledge that exists. This is because the invention requires synchronization between the medical emergencies, security access based on identity, and data transfer, which are normally handled individually.
+
+\
+
+What are the aspects of your disclosure that you want to claim/monopolize?
+
+Proposed Claims:
+
+1. Identity-based access to emergency medical records 
+
+2. Two-step secured method of authentication (patient and hospital)
+
+3. AI-assisted symptom analysis with verified medical information 
+
+4. Instantaneous updating of medical records by hospitals 
+
+5. Secured access to records during emergencies
+
+Have you conducted novelty/inventiveness search for your invention? If yes, what are the databases /references used by you? What Keywords did you use and What are the search results?
+
+Yes, the preliminary search for novelty and inventiveness has been conducted.
+
+The objective was to understand the different types of technology used in digital health records, emergency health care facilities, and AI-based health portals.
+
+Do you feel that a person of “average” skill (not-extraordinary skill) in your area of technology would have arrived at your invention with existing knowledge in public domain? If no, what could be the reasons for the same? 
+
+It would be impossible for an ordinary person to develop such technology because it involves multiple disciplines such as healthcare systems, AI decision-making, emergency actions, and access based on identity.
+
+10.References (if any)
+
+●World Health Organization (WHO) – Digital Health
+
+https://www.who.int/health-topics/digital-health
+
+●National Digital Health Mission (NDHM), Government of India
+
+http//abdm.gov.in
+
+●Electronic Health Records – Overview
+
+https://www.healthit.gov/topic/health-it-basics/what-are-electronic-health-records-ehrs
+
+●Inventor 1: 
+
+Name: Prince Lakhwani
+
+Designation: Student
+
+Department: AIML
+
+Contact Details: 7410949251
+
+Email and phone number: princelakhwani1608@gmail.com
+
+Nationality: Indian
+
+Inventor 2: 
+
+Name: Aman Singh
+
+Designation: Student
+
+Department: AIML
+
+Contact Details: 8384069981
+
+Email and phone number
+
+Nationality: Indian
+
+Inventor 3: 
+
+Name: Atharv Amol Randive
+
+Designation: Student
+
+Department: AIML
+
+Contact Details: 8862083382
+
+Email and phone number: 
+
+Nationality: Indian
