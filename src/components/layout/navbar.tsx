@@ -1,9 +1,12 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Rocket } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+
+const NAVBAR_LOGO_SRC = "/images/indoScience.png";
 
 const NAV_LINKS = [
   { name: "Home", href: "#home" },
@@ -40,15 +43,15 @@ export function Navbar() {
         scrolled ? "bg-background/70 backdrop-blur-md border-border/50 py-3 shadow-lg" : "bg-transparent py-5"
       )}
     >
-      <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-        <a href="#home" className="flex items-center gap-2 group">
-          <div className="bg-primary/20 p-2 rounded-lg group-hover:bg-primary/40 transition-colors">
-            <Rocket className="w-6 h-6 text-primary" />
-          </div>
-          <div className="font-bold text-xl tracking-wider">
-            <span className="text-white">SPARK</span>{" "}
-            <span className="text-primary">INDIA</span>
-          </div>
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-4 px-4 md:px-6">
+        <a href="#home" className="flex items-center gap-3 group">
+          <Image
+            src={NAVBAR_LOGO_SRC}
+            alt="Indo Science logo"
+            width={96}
+            height={96}
+            className="h-10 w-auto object-contain"
+          />
         </a>
 
         {/* Desktop Nav */}
@@ -83,7 +86,7 @@ export function Navbar() {
             exit={{ opacity: 0, height: 0 }}
             className="lg:hidden bg-background/95 backdrop-blur-lg border-b border-border/50 overflow-hidden"
           >
-            <nav className="container mx-auto px-4 py-4 flex flex-col gap-4">
+            <nav className="mx-auto flex w-full max-w-7xl flex-col gap-4 px-4 py-4 md:px-6">
               {NAV_LINKS.map((link) => (
                 <a
                   key={link.name}
